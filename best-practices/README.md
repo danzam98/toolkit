@@ -14,6 +14,14 @@ Authoritative guides for modern web development with Next.js 16, Tailwind v4, an
 | [TypeScript](typescript.md) | Strict mode configuration, type patterns |
 | [Motion Animations](motion-animations.md) | Motion library patterns, reduced motion support |
 
+### Agent Coordination
+
+| Guide | Description |
+|-------|-------------|
+| [Beads Issue Tracking](beads-issue-tracking.md) | br commands, types, priorities, dependencies |
+| [Beads Viewer](beads-viewer.md) | bv robot flags for AI agents |
+| [Agent Coordination](agent-coordination.md) | Multi-agent workflow patterns |
+
 ### Deployment & Operations
 
 | Guide | Description |

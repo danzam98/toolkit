@@ -83,6 +83,42 @@ If there are errors:
 
 ---
 
+## Issue Tracking with br (beads_rust)
+
+**IMPORTANT**: Use br for ALL issue tracking. Do NOT use markdown TODOs, GitHub Issues, or other external trackers for task coordination.
+
+**CRITICAL**: Only interact with beads via the `br` command. NEVER directly edit `.beads/*.json` or `.beads/*.jsonl` files.
+
+**CRITICAL**: Always commit `.beads/` directory with code changes. Issue state must stay synchronized with code state.
+
+### Quick Reference
+
+```bash
+br ready --json                      # Show unblocked tasks (JSON)
+br create "Title" -t task -p 2       # Create issue
+br update br-1 --status in_progress  # Claim task
+br close br-1 --reason "Done"        # Complete task
+br sync --flush-only                 # Export for git
+bv --robot-priority                  # What should I work on?
+```
+
+### Workflow
+
+1. `br ready --json` — Find available work
+2. `br update <id> --status in_progress` — Claim it
+3. Work on the task
+4. `br close <id> --reason "..."` — Complete with descriptive reason
+5. `br sync --flush-only` — Prepare for commit
+6. Commit code + `.beads/` together
+
+### Full Documentation
+
+- [beads-issue-tracking.md](../best-practices/beads-issue-tracking.md) — Commands, types, priorities
+- [beads-viewer.md](../best-practices/beads-viewer.md) — Robot flags for AI agents
+- [agent-coordination.md](../best-practices/agent-coordination.md) — Multi-agent workflows
+
+---
+
 ## Performance Considerations
 
 ### Core Web Vitals Targets

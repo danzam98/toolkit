@@ -63,6 +63,14 @@ Use this checklist before committing changes.
 - [ ] No unrelated changes included
 - [ ] Branch up to date with main
 
+## Issue Tracking
+
+- [ ] `br sync --flush-only` run before commit
+- [ ] `.beads/` directory changes are staged
+- [ ] Related beads updated or closed
+- [ ] New discoveries linked with `discovered-from`
+- [ ] Descriptive close reasons (not just "Done")
+
 ---
 
 ## Quick Commands
