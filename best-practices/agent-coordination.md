@@ -1,6 +1,8 @@
 # Agent Coordination
 
 > **Last Updated**: March 2026
+>
+> **Credit**: [Jeffrey Emanuel](https://github.com/Dicklesworthstone) — pioneer of AI agent coordination workflows using beads-based issue tracking.
 
 ## Overview
 

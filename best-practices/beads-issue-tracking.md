@@ -1,6 +1,8 @@
 # Beads Issue Tracking (br)
 
 > **Last Updated**: March 2026
+>
+> **Credit**: [Jeffrey Emanuel](https://github.com/Dicklesworthstone) — creator of beads_rust, beads_viewer, and the AI-first issue tracking workflow documented here.
 
 ## Overview
 

@@ -1,6 +1,8 @@
 # Beads Viewer (bv)
 
 > **Last Updated**: March 2026
+>
+> **Credit**: [Jeffrey Emanuel](https://github.com/Dicklesworthstone) — creator of beads_viewer and the robot flags API for AI agent coordination.
 
 ## Overview
 
