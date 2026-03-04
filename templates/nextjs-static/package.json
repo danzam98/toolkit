@@ -2,6 +2,7 @@
   "name": "{{PROJECT_NAME}}",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "packageManager": "bun@1.x",
   "engines": {
     "npm": "please-use-bun",
@@ -30,14 +31,18 @@
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^16.0.0",
     "@playwright/test": "^1.45.0",
     "@types/node": "^20.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
     "@vitejs/plugin-react": "^4.3.0",
     "autoprefixer": "^10.4.0",
     "eslint": "^9.0.0",
-    "eslint-config-next": "^16.0.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
     "happy-dom": "^14.0.0",
     "postcss": "^8.4.0",
     "prettier": "^3.3.0",
