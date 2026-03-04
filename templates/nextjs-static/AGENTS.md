@@ -128,18 +128,48 @@ bv --robot-priority                  # What to work on?
 
 ---
 
-## Git Workflow
+## Git & GitHub Workflow
 
-1. Make changes
-2. Run `bun run typecheck` and `bun run lint`
-3. Update beads: `br close <id>` for completed work
-4. Run `br sync --flush-only`
-5. Commit code AND `.beads/` together
-6. Push to trigger CI
+### CRITICAL: Always Push Your Work
+
+**NEVER leave commits stranded locally.** After every commit, push to the remote:
+
+```bash
+git push origin <branch>
+```
+
+Unpushed commits are invisible to the user, other agents, and CI. **Push is not optional.**
+
+### Standard Workflow
+
+1. Pull latest: `git pull --rebase origin main`
+2. Make changes
+3. Run `bun run typecheck` and `bun run lint`
+4. Update beads: `br close <id>` for completed work
+5. Run `br sync --flush-only`
+6. Commit code AND `.beads/` together
+7. **Push immediately**: `git push origin main`
+8. Verify CI: `gh run list --limit 1`
 
 ### Commit Messages
 
 Use conventional commits: `feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `chore:`
+
+### After Pushing
+
+```bash
+gh run list --limit 3    # Check CI status
+gh run watch             # Watch current run
+```
+
+If CI fails, fix immediately. Never leave a broken build.
+
+### Never Do These
+
+- **Never force push to main** — destroys history
+- **Never push secrets** — check `git diff --staged` first
+- **Never leave work unpushed** — always push before ending session
+- **Never ignore CI failures** — fix them immediately
 
 ---
 

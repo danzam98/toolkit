@@ -26,6 +26,7 @@ Authoritative guides for modern web development with Next.js 16, Tailwind v4, an
 
 | Guide | Description |
 |-------|-------------|
+| [GitHub Workflow](github-workflow.md) | Git commands, gh CLI, CI/CD, branch strategy |
 | [Cloudflare Pages](cloudflare-pages.md) | Static export, Functions, security headers |
 | [Testing](testing.md) | Vitest unit tests, Playwright E2E |
 | [CI/CD](ci-cd.md) | GitHub Actions, Dependabot, pre-commit hooks |

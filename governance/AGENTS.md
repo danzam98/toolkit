@@ -68,18 +68,97 @@ If there are errors:
 
 ---
 
-## Git Workflow
+## Git & GitHub Workflow
 
-1. Make changes
-2. Run `bun run typecheck` and `bun run lint`
-3. Commit with descriptive message
-4. Push to trigger CI
+### CRITICAL: Always Push Your Work
+
+**NEVER leave commits stranded locally.** After every commit, push to the remote:
+
+```bash
+git push origin <branch>
+```
+
+Unpushed commits are invisible to the user, other agents, and CI. They can be lost if the session ends or the machine crashes. **Push is not optional.**
+
+### Before Starting Work
+
+```bash
+git fetch origin
+git status                    # Check for uncommitted changes
+git pull --rebase origin main # Get latest changes
+```
+
+If there are conflicts, resolve them before proceeding.
+
+### Standard Workflow
+
+1. Pull latest changes from remote
+2. Make changes
+3. Run `bun run typecheck` and `bun run lint`
+4. Commit with descriptive message
+5. **Push immediately** — do not batch multiple commits before pushing
+6. Verify CI passes with `gh run list --limit 3`
 
 ### Commit Messages
 
 - Use conventional commits: `feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `chore:`
 - Keep subject line under 72 characters
 - Include context in body if needed
+
+### After Pushing
+
+Always verify your push triggered CI and check for failures:
+
+```bash
+gh run list --limit 3         # See recent workflow runs
+gh run view <run-id>          # View specific run details
+gh run watch                  # Watch current run in real-time
+```
+
+If CI fails, fix the issue and push again. Do not leave broken builds.
+
+### GitHub CLI (gh)
+
+Use `gh` for all GitHub interactions — it's faster and more reliable than the web UI:
+
+```bash
+# Pull requests
+gh pr create --title "feat: add feature" --body "Description"
+gh pr list
+gh pr view <number>
+gh pr merge <number>
+
+# Issues
+gh issue list
+gh issue view <number>
+gh issue create --title "Bug" --body "Description"
+
+# Repository info
+gh repo view
+gh run list
+```
+
+### Branch Strategy
+
+- `main`/`master` — production-ready code, always deployable
+- Feature branches — create for larger changes, merge via PR
+- Direct pushes to main — acceptable for small, safe changes in solo repos
+
+For team repos or when requested, create feature branches:
+
+```bash
+git checkout -b feat/my-feature
+# ... make changes ...
+git push -u origin feat/my-feature
+gh pr create
+```
+
+### Never Do These
+
+- **Never force push to main/master** — destroys history others may depend on
+- **Never push secrets** — check `git diff --staged` before committing
+- **Never leave work unpushed** — always push before ending a session
+- **Never ignore CI failures** — fix them or explain why they're expected
 
 ---
 

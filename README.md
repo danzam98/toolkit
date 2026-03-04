@@ -49,6 +49,7 @@ Authoritative guides for modern web development:
 | [performance.md](best-practices/performance.md) | Core Web Vitals, bundle budgets |
 | [seo.md](best-practices/seo.md) | Metadata, structured data, sitemaps |
 | [motion-animations.md](best-practices/motion-animations.md) | Motion library patterns |
+| [github-workflow.md](best-practices/github-workflow.md) | Git, gh CLI, CI/CD best practices |
 | [beads-issue-tracking.md](best-practices/beads-issue-tracking.md) | br/bv issue tracking for AI agents |
 | [beads-viewer.md](best-practices/beads-viewer.md) | bv robot flags for programmatic use |
 | [agent-coordination.md](best-practices/agent-coordination.md) | Multi-agent workflow patterns |
