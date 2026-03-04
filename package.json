@@ -1,0 +1,22 @@
+{
+  "name": "@danzam98/toolkit",
+  "version": "0.1.0",
+  "description": "A comprehensive toolkit for scaffolding production-ready Next.js projects",
+  "type": "module",
+  "keywords": [
+    "nextjs",
+    "scaffold",
+    "template",
+    "tailwind",
+    "shadcn",
+    "cloudflare",
+    "best-practices"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danzam98/toolkit.git"
+  },
+  "homepage": "https://github.com/danzam98/toolkit#readme"
+}

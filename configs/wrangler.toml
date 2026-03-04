@@ -1,0 +1,16 @@
+# Cloudflare Pages configuration
+# Copy to your project root and customize
+
+name = "my-project"
+compatibility_date = "2026-03-01"
+
+[site]
+bucket = "./out"
+
+# Environment variables (non-secret)
+# [vars]
+# NEXT_PUBLIC_SITE_URL = "https://example.com"
+
+# For secrets, use wrangler CLI:
+# wrangler secret put TURNSTILE_SECRET
+# wrangler secret put RESEND_API_KEY

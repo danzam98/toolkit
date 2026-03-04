@@ -1,0 +1,33 @@
+{
+  "name": "create-toolkit-app",
+  "version": "0.1.0",
+  "description": "CLI for scaffolding Next.js projects with best practices",
+  "type": "module",
+  "bin": {
+    "create-toolkit-app": "./index.ts"
+  },
+  "files": [
+    "*.ts"
+  ],
+  "scripts": {
+    "start": "bun run index.ts"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "degit": "^2.8.0",
+    "picocolors": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.5.0"
+  },
+  "keywords": [
+    "create",
+    "nextjs",
+    "scaffold",
+    "template",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT"
+}

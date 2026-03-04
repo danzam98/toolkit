@@ -1,0 +1,22 @@
+{
+  "name": "@toolkit/scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "optimize-images": "bun run optimize-images.ts",
+    "build-search-index": "bun run build-search-index.ts",
+    "generate-rss": "bun run generate-rss.ts",
+    "sync-github-stats": "bun run sync-github-stats.ts",
+    "validate-links": "bun run validate-links.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "feed": "^4.2.0",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.5.0"
+  }
+}
