@@ -18,7 +18,7 @@
     "picocolors": "^1.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
+    "@types/node": "^25.3.3",
     "typescript": "^5.5.0"
   },
   "keywords": [
