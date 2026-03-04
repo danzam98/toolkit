@@ -15,10 +15,8 @@ const nextConfig: NextConfig = {
   // React Compiler (stable in Next.js 16)
   reactCompiler: true,
 
-  experimental: {
-    // Type-safe <Link> components
-    typedRoutes: true,
-  },
+  // Type-safe <Link> components
+  typedRoutes: true,
 }
 
 export default nextConfig
