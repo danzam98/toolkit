@@ -77,6 +77,15 @@ bun run build
 bunx wrangler pages deploy out
 ```
 
+## Troubleshooting
+
+See the [troubleshooting guide](../../best-practices/troubleshooting.md) for solutions to common issues with:
+- Tailwind CSS v4 configuration
+- Static export errors
+- Cloudflare deployment
+- TypeScript strict mode
+- Motion/animation problems
+
 ## License
 
 MIT

@@ -24,6 +24,7 @@ Authoritative guides for modern web development with Next.js 16, Tailwind v4, an
 | [Security](security.md) | Headers, Turnstile, rate limiting, OWASP |
 | [Performance](performance.md) | Core Web Vitals, bundle budgets, image optimization |
 | [SEO](seo.md) | Metadata API, structured data, sitemaps |
+| [Troubleshooting](troubleshooting.md) | Common issues and solutions |
 
 ## Version Requirements
 
